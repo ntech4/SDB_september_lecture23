@@ -1,0 +1,79 @@
+/* this is a comment within CSS */
+/* changing the p tags color */
+p, h1 {  /* select all <P> tags*/
+
+    color: rgb(30, 212, 166);
+    background-color: rgb(38, 35, 50);
+}
+    body {
+        background-color: rgb(64, 64, 68);
+
+    /* 
+    in CSS we have 3 major ways to refer to a color...
+    - color  keywords:
+     - green lightgray orangered, etc...
+    - RGB value: 
+    rgb (0-255, 0-255, 0-255) */
+}
+.header{
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: overline; }
+/* 
+change a specific tag by selecting an ID */
+/* to select an ID must use a number sign # a.k.a */
+
+#unique{
+    text-decoration: underline overline;
+    border-radius: 5px
+}
+nav .btn {
+    text-shadow: 2px 2px 2px rgb(219, 45, 45);
+}
+/* this selector only effect the direct children of our nav */
+nav>.btn{
+    background-color:rgb(12, 181, 248)
+}
+a{
+    color: rgb(250, 247, 86) !important;
+}
+/* !CSS Hierarchy */
+/* this is going to allow CSS to use distinct levels of "priority" to style elements. the order of priority from weakest to strongest is:
+External Stylesheet: 
+-element
+-class
+-id
+-!important
+
+Iternal stylesheet: 
+-element
+-class
+-id
+-!important
+-inline styling
+
+External Stylesheet is a .css file which is not the. html file we have our webpage in 
+ inline styling is when I add a "style" 
+*/
+
+/* styling an unvisited link */
+a:link{
+    color: #050507;
+}
+
+/* styling a link I have visited */
+a:visited{
+    color: darkmagenta;
+    text-decoration: overline;
+}
+
+/* styling a link mu mouse is hovering over */
+a:hover{
+    color:blue
+
+}
+
+a:active{
+    color: greenyellow
+}
