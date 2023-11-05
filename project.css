@@ -1,0 +1,211 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 16px;
+    background: #0f1010;
+}
+.nav-area{
+    position: absolute;
+    top: 7%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    display: block;
+    list-style: none;
+}
+.nav-area li:first-of-type:before {
+    width: 10px;
+    height: 40px;
+    background: #facb0f;
+    left: -0px;
+    border: none;
+}
+
+.nav-area li{
+    position: relative;
+    float: left;
+    background: #facb0f;
+    line-height: 20px;
+    padding: 10px 14px;
+    margin-right: 35px;
+
+}
+.nav-area li a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+.nav-area li :first-of-type{
+    margin-left: 30px;
+}
+.nav-area li :last-of-type{
+    margin-right: 0;
+
+}
+.nav-area li:before{
+    content: '';
+    position: absolute;
+    background: none;
+    border-left: 20px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 40px solid #facb0f;
+    left: -19px;
+    top: 0;
+}
+.nav-area li:after{
+    content: '';
+    position: absolute;
+    border-left: 0px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #facb0f;
+    right: -19px;
+    top: 0;
+    width: 0;
+    height: 0;
+
+}
+.nav-area li:hover{
+    cursor: pointer;
+    background: #ffffff;
+}
+.nav-area li:hover:before{
+    border-top: 40px solid #ffffff;
+}
+.nav-area li:hover:after{
+    border-bottom:40px solid #ffffff;
+}
+.nav-area li:first-of-type:hover:before{
+    background: #000;
+    width: 10px;
+    height: 0;
+}
+.nav-area li:last-of-type::after{
+    border: none;
+     width: 10px;
+     height: 40px;
+     background: #facb0f;
+     right: -9px;
+
+}
+
+.nav-area li:last-of-type:hover:after{
+    background: #000;
+    width: 10px;
+    height: 40px;
+    
+}
+
+
+
+
+
+.panda-type1m {
+    background-color: rgb(14, 70, 119);
+
+}
+
+p {
+    color: #ffffff;
+   position: absolute;
+   top: 40%;
+
+    text-align: center;
+    text-decoration: 
+
+}
+
+
+
+
+h1 {
+    color: #facb0f;
+    text-align: center;
+    bottom: 234%;
+    
+}
+
+.flex-container{
+    width: 80%;
+    height: 11%;
+    display: flex;
+    background: #facb0f;
+    position: absolute;
+    flex-wrap: wrap;
+    bottom: 40%;
+    left: 5%;
+    right: 5%;
+    text-align:center;
+    justify-content: center;
+    font-size: medium;
+    border-radius: 1%;
+    padding: 1.5%;
+    font-style: oblique;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    bottom: 5%;;
+    left: 25%;
+    gap: 20px;
+    flex-wrap: wrap;
+   
+   
+}
+
+
+.card{
+    width: 250px;
+    height: 250%;
+    position: relative;
+    background: #facb0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+
+
+
+    transition: all .3s ease-in;
+}
+.card > *{
+    padding: 10px;
+}
+.card .card-image{
+    height: 150px;
+    width: 150px;
+    border: 5px double #022a3c;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;    
+}
+.card .card-title{
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 2px #262654;
+}
+.card:nth-child(1) .card-image{
+    background-image: url("c\users\powerDad\desktop\DSC_5208.JPG");
+}
+.card:nth-child(2) .card-image{
+    background-image: url("C:\Users\PowerDad\Desktop\DSC_5208.JPG");
+}
+.card:nth-child(3) .card-image{
+    background-image: url("C:\Users\PowerDad\Desktop\DSC_5208.JPG");
+}
+.card:hover{
+    background: #facb0f;
+    color: #ffffff;
+    box-shadow: 0px 0px 11px 5px #979797;
+
+}
+
+.card .card-text{
+    line-height: 20px;
+    font-size: 400;
+}
